@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SAOTPVerificationVC" customModule="SliderApp" customModuleProvider="target">
+            <connections>
+                <outlet property="alertView" destination="E2f-I0-dYe" id="VFa-wi-W2f"/>
+                <outlet property="otpTextField" destination="QKC-W9-fuQ" id="UIc-hj-j5P"/>
+                <outlet property="view" destination="2t0-G4-kHZ" id="6Pa-uM-9sU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="SAOtpVerificationVC" id="2t0-G4-kHZ">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiJ-6s-CU9">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2f-I0-dYe">
+                            <rect key="frame" x="20" y="233" width="335" height="200"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have received 6 digit verification code on your registered email id." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCB-zq-wch">
+                                    <rect key="frame" x="8" y="10" width="319" height="46"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="46" id="72Z-n0-bhG"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter OTP Code." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIp-tt-hbZ">
+                                    <rect key="frame" x="8" y="56" width="319" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="i1Z-ot-2rP"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QKC-W9-fuQ">
+                                    <rect key="frame" x="21" y="93" width="294" height="35"/>
+                                    <color key="tintColor" red="0.54829102750000003" green="0.33071592449999998" blue="0.99875158070000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="fsF-Bg-D2Q"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Q4o-iU-r3D"/>
+                                    </connections>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btD-iH-Iwy">
+                                    <rect key="frame" x="107" y="157" width="120" height="40"/>
+                                    <color key="backgroundColor" red="0.54829102750000003" green="0.33071592449999998" blue="0.99875158070000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="iVP-0s-eF8"/>
+                                        <constraint firstAttribute="width" constant="120" id="zlu-97-vpp"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="17"/>
+                                    <state key="normal" title="OK">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="20"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="okButtonAction:" destination="-1" eventType="touchUpInside" id="U67-dH-LdA"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sgK-ne-YHv">
+                                    <rect key="frame" x="221" y="128" width="94" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="94" id="mVc-Wc-Ub3"/>
+                                        <constraint firstAttribute="height" constant="25" id="rIb-Hc-Z40"/>
+                                    </constraints>
+                                    <state key="normal">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="Resend OTP">
+                                                <attributes>
+                                                    <color key="NSColor" red="0.54829102750000003" green="0.33071592449999998" blue="0.99875158070000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system" size="15"/>
+                                                    <integer key="NSUnderline" value="1"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                    <connections>
+                                        <action selector="resendOtpButtonAction:" destination="-1" eventType="touchUpInside" id="Waw-NT-tZC"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="sgK-ne-YHv" firstAttribute="top" secondItem="QKC-W9-fuQ" secondAttribute="bottom" id="6qL-rg-TLc"/>
+                                <constraint firstItem="jCB-zq-wch" firstAttribute="leading" secondItem="E2f-I0-dYe" secondAttribute="leading" constant="8" id="6xW-Or-c2y"/>
+                                <constraint firstItem="btD-iH-Iwy" firstAttribute="top" secondItem="QKC-W9-fuQ" secondAttribute="bottom" constant="29" id="ADq-7b-3OT"/>
+                                <constraint firstAttribute="trailing" secondItem="VIp-tt-hbZ" secondAttribute="trailing" constant="8" id="BDk-cN-mzq"/>
+                                <constraint firstItem="jCB-zq-wch" firstAttribute="top" secondItem="E2f-I0-dYe" secondAttribute="top" constant="10" id="HWR-aI-8H7"/>
+                                <constraint firstItem="QKC-W9-fuQ" firstAttribute="top" secondItem="VIp-tt-hbZ" secondAttribute="bottom" constant="15" id="Kgl-td-z8s"/>
+                                <constraint firstAttribute="trailing" secondItem="sgK-ne-YHv" secondAttribute="trailing" constant="20" id="P8a-VO-33Z"/>
+                                <constraint firstItem="VIp-tt-hbZ" firstAttribute="leading" secondItem="E2f-I0-dYe" secondAttribute="leading" constant="8" id="TKh-W2-vqU"/>
+                                <constraint firstAttribute="trailing" secondItem="QKC-W9-fuQ" secondAttribute="trailing" constant="20" id="Uml-Ph-3Mv"/>
+                                <constraint firstItem="btD-iH-Iwy" firstAttribute="centerX" secondItem="E2f-I0-dYe" secondAttribute="centerX" constant="-0.33333333333334281" id="Vgg-Wu-5lo"/>
+                                <constraint firstAttribute="trailing" secondItem="jCB-zq-wch" secondAttribute="trailing" constant="8" id="j7C-jo-owM"/>
+                                <constraint firstAttribute="height" constant="200" id="o70-Ht-7bz"/>
+                                <constraint firstItem="VIp-tt-hbZ" firstAttribute="top" secondItem="jCB-zq-wch" secondAttribute="bottom" id="p2z-D0-ERt"/>
+                                <constraint firstItem="QKC-W9-fuQ" firstAttribute="leading" secondItem="E2f-I0-dYe" secondAttribute="leading" constant="21" id="ttu-gD-ibb"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.69999999999999996" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="E2f-I0-dYe" firstAttribute="leading" secondItem="ZiJ-6s-CU9" secondAttribute="leading" constant="20" id="3us-bB-pBg"/>
+                        <constraint firstAttribute="trailing" secondItem="E2f-I0-dYe" secondAttribute="trailing" constant="20" id="95F-BK-Rle"/>
+                        <constraint firstItem="E2f-I0-dYe" firstAttribute="centerY" secondItem="ZiJ-6s-CU9" secondAttribute="centerY" id="J6N-3W-bim"/>
+                        <constraint firstItem="E2f-I0-dYe" firstAttribute="centerX" secondItem="ZiJ-6s-CU9" secondAttribute="centerX" id="sSq-Su-H80"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ZiJ-6s-CU9" secondAttribute="trailing" id="IM2-9f-CvO"/>
+                <constraint firstAttribute="bottom" secondItem="ZiJ-6s-CU9" secondAttribute="bottom" id="O63-3z-uaT"/>
+                <constraint firstItem="ZiJ-6s-CU9" firstAttribute="top" secondItem="2t0-G4-kHZ" secondAttribute="top" id="ZPo-mY-Lnw"/>
+                <constraint firstItem="ZiJ-6s-CU9" firstAttribute="leading" secondItem="2t0-G4-kHZ" secondAttribute="leading" id="z9B-Zc-1sf"/>
+            </constraints>
+            <point key="canvasLocation" x="4.5" y="18.5"/>
+        </view>
+    </objects>
+</document>

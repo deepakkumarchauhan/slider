@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="interestedCellId" id="KGk-i7-Jjw" customClass="SAInterestedPeopleTableViewCell" customModule="SliderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nkh-2c-Dnb">
+                        <rect key="frame" x="65" y="26" width="508" height="66"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="HQ9-LC-rNk">
+                                <rect key="frame" x="41" y="19" width="349" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="M6G-0S-eum"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="15"/>
+                                <color key="textColor" red="0.16862745098039217" green="0.16470588235294117" blue="0.44705882352941179" alpha="0.8477354307432432" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kig-DV-9Lx">
+                                <rect key="frame" x="404" y="16" width="93" height="35"/>
+                                <color key="backgroundColor" red="0.46274509803921571" green="0.19607843137254902" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="9P6-bb-ljY"/>
+                                    <constraint firstAttribute="width" constant="93" id="W4q-aK-h5D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="15"/>
+                                <state key="normal" title="Connect">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="66" id="GCT-QL-mVG"/>
+                            <constraint firstAttribute="trailing" secondItem="Kig-DV-9Lx" secondAttribute="trailing" constant="11" id="NaU-hn-UHW"/>
+                            <constraint firstItem="Kig-DV-9Lx" firstAttribute="centerY" secondItem="Nkh-2c-Dnb" secondAttribute="centerY" id="RZO-FH-BTJ"/>
+                            <constraint firstItem="Kig-DV-9Lx" firstAttribute="leading" secondItem="HQ9-LC-rNk" secondAttribute="trailing" constant="14" id="dTV-Dn-LrO"/>
+                            <constraint firstItem="HQ9-LC-rNk" firstAttribute="leading" secondItem="Nkh-2c-Dnb" secondAttribute="leading" constant="41" id="wJr-c4-gab"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="bottomRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_chat_user_img2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ySn-zr-SkM">
+                        <rect key="frame" x="28" y="0.0" width="80" height="94"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="94" id="Mnn-M1-wli"/>
+                            <constraint firstAttribute="width" constant="80" id="xtK-2Q-YO5"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Nkh-2c-Dnb" secondAttribute="trailing" constant="27" id="7ij-gT-HuF"/>
+                    <constraint firstItem="Nkh-2c-Dnb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="9.25" id="TQR-or-l7X"/>
+                    <constraint firstItem="Nkh-2c-Dnb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="65" id="Tie-Rx-fLx"/>
+                    <constraint firstItem="HQ9-LC-rNk" firstAttribute="centerY" secondItem="ySn-zr-SkM" secondAttribute="centerY" constant="12" id="bCl-0E-LvI"/>
+                    <constraint firstItem="ySn-zr-SkM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="28" id="t9V-OM-pkO"/>
+                    <constraint firstItem="ySn-zr-SkM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="yj8-f5-AoG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="connectButton" destination="Kig-DV-9Lx" id="OwN-Wo-Od0"/>
+                <outlet property="nameLabel" destination="HQ9-LC-rNk" id="DFk-i0-Xpf"/>
+                <outlet property="userImageView" destination="ySn-zr-SkM" id="Xw9-BN-pgZ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dummy_chat_user_img2.png" width="92" height="91"/>
+    </resources>
+</document>

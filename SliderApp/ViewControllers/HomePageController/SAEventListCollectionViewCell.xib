@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="eventListCollectionCellID" id="gTV-IL-0wX" customClass="SAEventListCollectionViewCell" customModule="SliderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="205" height="244"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="205" height="244"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u39-Yj-jHH">
+                        <rect key="frame" x="8" y="15" width="189" height="214"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="p8c-HL-tS8">
+                                <rect key="frame" x="8" y="126" width="173" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="guZ-i1-sKB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="15"/>
+                                <color key="textColor" red="0.058823529411764705" green="0.12941176470588234" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tallahassee, Florida" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Tm-UU-w9N">
+                                <rect key="frame" x="8" y="147" width="173" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="azN-Ul-z5z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Jun, at 12:00am" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3AV-xp-zio">
+                                <rect key="frame" x="8" y="167" width="173" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="DV5-gP-Ogs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0F-7J-SX0">
+                                <rect key="frame" x="8" y="188" width="173" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="v9d-0M-Byj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="11"/>
+                                <state key="normal" title="Tallahassee" image="location_icon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p8c-HL-tS8" firstAttribute="leading" secondItem="u39-Yj-jHH" secondAttribute="leading" constant="8" id="354-c9-kEN"/>
+                            <constraint firstItem="3AV-xp-zio" firstAttribute="top" secondItem="p8c-HL-tS8" secondAttribute="bottom" constant="20" id="9a9-DG-Uk3"/>
+                            <constraint firstAttribute="trailing" secondItem="3AV-xp-zio" secondAttribute="trailing" constant="8" id="IMb-6x-rkc"/>
+                            <constraint firstItem="1Tm-UU-w9N" firstAttribute="top" secondItem="p8c-HL-tS8" secondAttribute="bottom" id="Llb-en-SO7"/>
+                            <constraint firstAttribute="trailing" secondItem="p8c-HL-tS8" secondAttribute="trailing" constant="8" id="Y7c-il-HLu"/>
+                            <constraint firstAttribute="trailing" secondItem="u0F-7J-SX0" secondAttribute="trailing" constant="8" id="cGz-gu-TNH"/>
+                            <constraint firstItem="u0F-7J-SX0" firstAttribute="leading" secondItem="u39-Yj-jHH" secondAttribute="leading" constant="8" id="eRx-ki-Cay"/>
+                            <constraint firstAttribute="trailing" secondItem="1Tm-UU-w9N" secondAttribute="trailing" constant="8" id="kUC-A7-URV"/>
+                            <constraint firstItem="1Tm-UU-w9N" firstAttribute="leading" secondItem="u39-Yj-jHH" secondAttribute="leading" constant="8" id="ojF-1e-QEo"/>
+                            <constraint firstItem="3AV-xp-zio" firstAttribute="leading" secondItem="u39-Yj-jHH" secondAttribute="leading" constant="8" id="r8x-e9-VJB"/>
+                            <constraint firstItem="u0F-7J-SX0" firstAttribute="top" secondItem="3AV-xp-zio" secondAttribute="bottom" id="xeI-Od-s6U"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_banner_img.png" translatesAutoresizingMaskIntoConstraints="NO" id="OX6-ur-p9I">
+                        <rect key="frame" x="27" y="4" width="151" height="133"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="133" id="0Os-3f-UmL"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjm-Wm-QZC">
+                        <rect key="frame" x="158.5" y="109" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="RXh-pB-3MP"/>
+                            <constraint firstAttribute="width" constant="40" id="g3n-JS-Id3"/>
+                        </constraints>
+                        <state key="normal" image="chat_icon"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="u39-Yj-jHH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="1uu-vs-pp5"/>
+                <constraint firstItem="u39-Yj-jHH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="5mk-xX-w5f"/>
+                <constraint firstItem="OX6-ur-p9I" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="27" id="EBV-6u-e4z"/>
+                <constraint firstAttribute="trailing" secondItem="cjm-Wm-QZC" secondAttribute="trailing" constant="6.5" id="IiS-7F-Eei"/>
+                <constraint firstItem="p8c-HL-tS8" firstAttribute="top" secondItem="cjm-Wm-QZC" secondAttribute="bottom" constant="-8" id="Pgn-8C-NHj"/>
+                <constraint firstItem="cjm-Wm-QZC" firstAttribute="top" secondItem="u39-Yj-jHH" secondAttribute="bottom" constant="-120" id="VC3-77-TbP"/>
+                <constraint firstAttribute="trailing" secondItem="OX6-ur-p9I" secondAttribute="trailing" constant="27" id="cyh-rK-Rsp"/>
+                <constraint firstAttribute="trailing" secondItem="u39-Yj-jHH" secondAttribute="trailing" constant="8" id="fZB-Xp-ql7"/>
+                <constraint firstItem="OX6-ur-p9I" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="g18-0N-WbB"/>
+                <constraint firstAttribute="bottom" secondItem="u39-Yj-jHH" secondAttribute="bottom" constant="15" id="sQU-bL-f2b"/>
+            </constraints>
+            <size key="customSize" width="205" height="244"/>
+            <connections>
+                <outlet property="eventDateLabel" destination="3AV-xp-zio" id="dl4-Bv-bFC"/>
+                <outlet property="eventImageView" destination="OX6-ur-p9I" id="3ZW-Wz-pBP"/>
+                <outlet property="eventLocationButton" destination="cjm-Wm-QZC" id="EMi-tH-Hx3"/>
+                <outlet property="eventLocationLabel" destination="1Tm-UU-w9N" id="ioV-P5-GZQ"/>
+                <outlet property="eventNameLabel" destination="p8c-HL-tS8" id="1tG-pq-RM1"/>
+            </connections>
+            <point key="canvasLocation" x="38.5" y="-33"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="chat_icon" width="102" height="102"/>
+        <image name="dummy_banner_img.png" width="375" height="177"/>
+        <image name="location_icon" width="17" height="17"/>
+    </resources>
+</document>

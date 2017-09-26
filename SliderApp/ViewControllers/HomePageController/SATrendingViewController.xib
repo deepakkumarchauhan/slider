@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SATrendingViewController" customModule="SliderApp" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="h2h-By-FFd" id="AQ4-OI-NIR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_image2" translatesAutoresizingMaskIntoConstraints="NO" id="xyO-8S-FSI">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h2h-By-FFd">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="c21-8H-Hgp"/>
+                        <outlet property="delegate" destination="-1" id="L0x-nM-5ys"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="h2h-By-FFd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3ix-cV-q6N"/>
+                <constraint firstAttribute="bottom" secondItem="h2h-By-FFd" secondAttribute="bottom" id="41o-zR-JvP"/>
+                <constraint firstItem="xyO-8S-FSI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5UG-gh-Y2v"/>
+                <constraint firstAttribute="trailing" secondItem="h2h-By-FFd" secondAttribute="trailing" id="EfL-jZ-BNa"/>
+                <constraint firstItem="xyO-8S-FSI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ise-SJ-uGv"/>
+                <constraint firstAttribute="trailing" secondItem="xyO-8S-FSI" secondAttribute="trailing" id="Mz5-HA-mTY"/>
+                <constraint firstItem="h2h-By-FFd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gfu-ss-1ZV"/>
+                <constraint firstAttribute="bottom" secondItem="xyO-8S-FSI" secondAttribute="bottom" id="ntO-dq-rxU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_image2" width="320" height="568"/>
+    </resources>
+</document>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SAEventListViewController" customModule="SliderApp" customModuleProvider="target">
+            <connections>
+                <outlet property="calendarButton" destination="7FQ-GF-ELZ" id="OZm-kU-bjK"/>
+                <outlet property="collectionView" destination="08T-AG-e5L" id="bBj-6e-hoa"/>
+                <outlet property="daysViewHeightConstraint" destination="DVX-Y2-xmd" id="4LG-at-0Y3"/>
+                <outlet property="menuButton" destination="fDQ-U4-H40" id="HBy-6J-Oxx"/>
+                <outlet property="navigationHeightConstraint" destination="zTP-RT-YsO" id="b0N-gI-DxN"/>
+                <outlet property="navigationTitleLabel" destination="YZ4-xr-kbS" id="kYj-dk-ORa"/>
+                <outlet property="seperatorLabel" destination="m1x-E4-LR1" id="hcQ-Mq-Bcc"/>
+                <outlet property="todayButton" destination="dHQ-GO-n2K" id="gmb-TM-pRX"/>
+                <outlet property="tomorrowButton" destination="IgP-lo-IYW" id="fdn-fp-7aQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weekendButton" destination="MlG-W7-IYu" id="z45-pO-PbU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_image2" translatesAutoresizingMaskIntoConstraints="NO" id="IX3-8D-PkU">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t9P-bG-8JX">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDQ-U4-H40">
+                            <rect key="frame" x="2" y="4" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="L9i-jS-PiZ"/>
+                                <constraint firstAttribute="height" constant="60" id="r2k-kx-Pwc"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="menu_icon"/>
+                            <state key="selected" image="menu_icon"/>
+                            <state key="highlighted" image="menu_icon"/>
+                            <connections>
+                                <action selector="menubuttonAction:" destination="-1" eventType="touchUpInside" id="Tnj-si-lhI"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Events" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZ4-xr-kbS">
+                            <rect key="frame" x="79" y="27" width="441" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="bTH-dR-09y"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1x-E4-LR1">
+                            <rect key="frame" x="0.0" y="63" width="600" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="EKu-p0-uVV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.32620662449999999" green="0.3461603224" blue="0.48230838780000002" alpha="0.78106524489999996" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="fDQ-U4-H40" firstAttribute="leading" secondItem="t9P-bG-8JX" secondAttribute="leading" constant="2" id="Fu0-dy-P0h"/>
+                        <constraint firstItem="YZ4-xr-kbS" firstAttribute="centerY" secondItem="t9P-bG-8JX" secondAttribute="centerY" constant="5.5" id="Jss-WN-3QC"/>
+                        <constraint firstItem="YZ4-xr-kbS" firstAttribute="leading" secondItem="t9P-bG-8JX" secondAttribute="leading" constant="79" id="Uka-YM-GUY"/>
+                        <constraint firstAttribute="bottom" secondItem="m1x-E4-LR1" secondAttribute="bottom" id="UwJ-EI-niq"/>
+                        <constraint firstAttribute="trailing" secondItem="YZ4-xr-kbS" secondAttribute="trailing" constant="80" id="VpL-E2-QVn"/>
+                        <constraint firstItem="m1x-E4-LR1" firstAttribute="leading" secondItem="t9P-bG-8JX" secondAttribute="leading" id="ict-hh-8wb"/>
+                        <constraint firstAttribute="trailing" secondItem="m1x-E4-LR1" secondAttribute="trailing" id="jzD-yu-EFr"/>
+                        <constraint firstItem="fDQ-U4-H40" firstAttribute="top" secondItem="t9P-bG-8JX" secondAttribute="top" constant="4" id="pPg-h0-9yy"/>
+                        <constraint firstAttribute="height" constant="64" id="zTP-RT-YsO"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="08T-AG-e5L">
+                    <rect key="frame" x="10" y="122" width="580" height="478"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="5AB-JD-vmG">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Tw0-e4-mZ8"/>
+                        <outlet property="delegate" destination="-1" id="nWN-yN-wS1"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sUG-oH-jkU">
+                    <rect key="frame" x="0.0" y="64" width="600" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHQ-GO-n2K">
+                            <rect key="frame" x="10" y="10" width="141" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="HsC-Cf-kiU"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="12"/>
+                            <state key="normal" title="Today">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="todayButtonAction:" destination="-1" eventType="touchUpInside" id="yw7-hO-D69"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MlG-W7-IYu">
+                            <rect key="frame" x="302" y="10" width="141" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="PJ1-tz-cqI"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="12"/>
+                            <state key="normal" title="Weekend">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="weekendButtonAction:" destination="-1" eventType="touchUpInside" id="ssa-Oe-Uav"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7FQ-GF-ELZ">
+                            <rect key="frame" x="448" y="10" width="141" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="cH0-bc-ye8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="12"/>
+                            <state key="normal" title="Calender">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="calendarButtonAction:" destination="-1" eventType="touchUpInside" id="bWn-zS-440"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IgP-lo-IYW">
+                            <rect key="frame" x="156" y="10" width="141" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="Lkf-29-SaH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="12"/>
+                            <state key="normal" title="Tomorrow">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="15"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="tomorrowButtonAction:" destination="-1" eventType="touchUpInside" id="FCp-Wh-aUO"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.32620662449999999" green="0.3461603224" blue="0.48230838780000002" alpha="0.78106524489999996" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="IgP-lo-IYW" firstAttribute="width" secondItem="dHQ-GO-n2K" secondAttribute="width" id="0Lp-AH-gMV"/>
+                        <constraint firstAttribute="height" constant="50" id="DVX-Y2-xmd"/>
+                        <constraint firstItem="7FQ-GF-ELZ" firstAttribute="leading" secondItem="MlG-W7-IYu" secondAttribute="trailing" constant="5" id="Dc7-BE-t0n"/>
+                        <constraint firstItem="dHQ-GO-n2K" firstAttribute="top" secondItem="sUG-oH-jkU" secondAttribute="top" constant="10" id="IKB-Wp-AH9"/>
+                        <constraint firstItem="7FQ-GF-ELZ" firstAttribute="top" secondItem="sUG-oH-jkU" secondAttribute="top" constant="10" id="KlV-9D-52x"/>
+                        <constraint firstItem="MlG-W7-IYu" firstAttribute="height" secondItem="dHQ-GO-n2K" secondAttribute="height" id="S4J-3W-VyN"/>
+                        <constraint firstItem="7FQ-GF-ELZ" firstAttribute="height" secondItem="dHQ-GO-n2K" secondAttribute="height" id="Yjm-KS-979"/>
+                        <constraint firstAttribute="trailing" secondItem="7FQ-GF-ELZ" secondAttribute="trailing" constant="11" id="aQG-vU-cx9"/>
+                        <constraint firstItem="MlG-W7-IYu" firstAttribute="width" secondItem="dHQ-GO-n2K" secondAttribute="width" id="cyO-iH-z89"/>
+                        <constraint firstItem="IgP-lo-IYW" firstAttribute="leading" secondItem="dHQ-GO-n2K" secondAttribute="trailing" constant="5" id="ebj-gQ-GLS"/>
+                        <constraint firstItem="MlG-W7-IYu" firstAttribute="top" secondItem="sUG-oH-jkU" secondAttribute="top" constant="10" id="gGa-O9-qw4"/>
+                        <constraint firstItem="MlG-W7-IYu" firstAttribute="leading" secondItem="IgP-lo-IYW" secondAttribute="trailing" constant="5" id="lhX-8t-HbY"/>
+                        <constraint firstItem="7FQ-GF-ELZ" firstAttribute="width" secondItem="dHQ-GO-n2K" secondAttribute="width" id="q0a-eJ-SiF"/>
+                        <constraint firstItem="IgP-lo-IYW" firstAttribute="height" secondItem="dHQ-GO-n2K" secondAttribute="height" id="s3d-wd-jpJ"/>
+                        <constraint firstItem="dHQ-GO-n2K" firstAttribute="leading" secondItem="sUG-oH-jkU" secondAttribute="leading" constant="10" id="wmH-Hp-lEo"/>
+                        <constraint firstItem="IgP-lo-IYW" firstAttribute="top" secondItem="sUG-oH-jkU" secondAttribute="top" constant="10" id="yeq-lc-ylD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="08T-AG-e5L" secondAttribute="bottom" id="B2L-Rg-7Du"/>
+                <constraint firstAttribute="trailing" secondItem="IX3-8D-PkU" secondAttribute="trailing" id="P5g-5M-VE1"/>
+                <constraint firstAttribute="trailing" secondItem="t9P-bG-8JX" secondAttribute="trailing" id="PMC-Kf-Xzt"/>
+                <constraint firstItem="sUG-oH-jkU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="T3K-Ef-Qyb"/>
+                <constraint firstAttribute="trailing" secondItem="sUG-oH-jkU" secondAttribute="trailing" id="V5f-27-iKw"/>
+                <constraint firstAttribute="trailing" secondItem="08T-AG-e5L" secondAttribute="trailing" constant="10" id="VrH-hD-b13"/>
+                <constraint firstItem="IX3-8D-PkU" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b11-kF-0Cc"/>
+                <constraint firstItem="08T-AG-e5L" firstAttribute="top" secondItem="sUG-oH-jkU" secondAttribute="bottom" constant="8" id="gf1-IE-Ugh"/>
+                <constraint firstItem="08T-AG-e5L" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="ijA-d7-C7I"/>
+                <constraint firstItem="sUG-oH-jkU" firstAttribute="top" secondItem="t9P-bG-8JX" secondAttribute="bottom" id="nA3-HX-gCZ"/>
+                <constraint firstItem="t9P-bG-8JX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="p4e-CN-Fua"/>
+                <constraint firstItem="IX3-8D-PkU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="q0X-71-Y8P"/>
+                <constraint firstAttribute="bottom" secondItem="IX3-8D-PkU" secondAttribute="bottom" id="xfv-86-MoE"/>
+                <constraint firstItem="t9P-bG-8JX" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zXr-JY-aU1"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_image2" width="320" height="568"/>
+        <image name="menu_icon" width="30" height="30"/>
+    </resources>
+</document>

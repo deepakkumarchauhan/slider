@@ -1,0 +1,28 @@
+PODS:
+  - CVCalendar (1.5.0)
+  - GoogleMaps (2.3.1):
+    - GoogleMaps/Maps (= 2.3.1)
+  - GoogleMaps/Base (2.3.1)
+  - GoogleMaps/Maps (2.3.1):
+    - GoogleMaps/Base
+  - GooglePlacePicker (2.3.1):
+    - GoogleMaps (= 2.3.1)
+    - GooglePlaces (= 2.3.1)
+  - GooglePlaces (2.3.1):
+    - GoogleMaps/Base (= 2.3.1)
+
+DEPENDENCIES:
+  - CVCalendar (~> 1.5.0)
+  - GoogleMaps
+  - GooglePlacePicker
+  - GooglePlaces
+
+SPEC CHECKSUMS:
+  CVCalendar: 5d51a7bda1b9439b612de69d86a91a73befa1936
+  GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
+  GooglePlacePicker: fc3564ac7a2ce314e78e42bfc1e16822ad1e5488
+  GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
+
+PODFILE CHECKSUM: c4ed1cc5beb7366e7b157337cc3c980a16e66b27
+
+COCOAPODS: 1.2.0

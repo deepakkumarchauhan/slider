@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SAMenuViewController" customModule="SliderApp" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="t0T-Qe-Q27" id="mB9-hY-caP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_image2" translatesAutoresizingMaskIntoConstraints="NO" id="YLJ-XT-4sE">
+                    <rect key="frame" x="0.0" y="0.0" width="376" height="600"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t0T-Qe-Q27">
+                    <rect key="frame" x="0.0" y="41" width="376" height="559"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="6YB-9v-qOr"/>
+                        <outlet property="delegate" destination="-1" id="EAP-JL-liK"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="t0T-Qe-Q27" secondAttribute="bottom" id="2cm-kR-7Ti"/>
+                <constraint firstItem="YLJ-XT-4sE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9bq-PT-ey8"/>
+                <constraint firstAttribute="bottom" secondItem="YLJ-XT-4sE" secondAttribute="bottom" id="O8i-hW-coH"/>
+                <constraint firstAttribute="trailing" secondItem="YLJ-XT-4sE" secondAttribute="trailing" id="RHS-Z9-HPa"/>
+                <constraint firstItem="t0T-Qe-Q27" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="VCo-57-pgR"/>
+                <constraint firstAttribute="trailing" secondItem="t0T-Qe-Q27" secondAttribute="trailing" id="lH7-qc-mZa"/>
+                <constraint firstItem="YLJ-XT-4sE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rtI-DG-m2a"/>
+                <constraint firstItem="t0T-Qe-Q27" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="41" id="slT-Qu-jV7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-87" y="52"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="background_image2" width="320" height="568"/>
+    </resources>
+</document>

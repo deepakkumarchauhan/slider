@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="eventDetailCellID" rowHeight="58" id="KGk-i7-Jjw" customClass="SAEventDetailTableViewCell" customModule="SliderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJN-tT-MHY">
+                        <rect key="frame" x="20" y="0.0" width="560" height="109"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event 4" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ZE-3f-xrV">
+                                <rect key="frame" x="19" y="15" width="426" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="dwa-qQ-Qfw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="15"/>
+                                <color key="textColor" red="0.058823529411764705" green="0.12941176470588237" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrG-27-4n9" customClass="FloatRatingView" customModule="SliderApp" customModuleProvider="target">
+                                <rect key="frame" x="463" y="15" width="89" height="18"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="4QS-OQ-sRx"/>
+                                    <constraint firstAttribute="width" constant="89" id="hJa-k8-WT3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="star_iconWhite"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="star_icon"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minRating">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxRating">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="editable" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="halfRatings" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="floatRatings" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tallahassee, Florida" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CkF-Hq-bJZ">
+                                <rect key="frame" x="19" y="35" width="426" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="a4z-tN-5sJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15 Jun, at 12:00am" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUP-5F-0jO">
+                                <rect key="frame" x="19" y="50" width="427" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="iUV-Eg-rfb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i1H-Rb-Z9I">
+                                <rect key="frame" x="19" y="68" width="423" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="YIL-Ur-L4G"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Interested people 4+">
+                                            <attributes>
+                                                <color key="NSColor" red="0.050980392156862744" green="0.058823529411764705" blue="0.34509803921568627" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" metaFont="system"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1i-Ie-4tV">
+                                <rect key="frame" x="457" y="60" width="95" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="ZbJ-Q3-wYd"/>
+                                    <constraint firstAttribute="height" constant="16" id="jU0-h7-Q29"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="11"/>
+                                <state key="normal" title="Tallahassee" image="location_icon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gk7-XS-ked">
+                                <rect key="frame" x="457" y="60" width="95" height="22"/>
+                                <color key="backgroundColor" red="0.47450980390000003" green="0.20784313730000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="ERS-3o-1il"/>
+                                    <constraint firstAttribute="width" constant="95" id="IfT-5e-7ZU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="11"/>
+                                <state key="normal" title="Group chat">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Daf-5l-NGS">
+                                <rect key="frame" x="457" y="84" width="95" height="22"/>
+                                <color key="backgroundColor" red="0.47450980390000003" green="0.20784313730000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="0SM-No-upr"/>
+                                    <constraint firstAttribute="width" constant="95" id="fL7-Bg-PHG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="11"/>
+                                <state key="normal" title="Invite friends">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Daf-5l-NGS" firstAttribute="top" secondItem="t1i-Ie-4tV" secondAttribute="bottom" constant="8" id="2KO-Y8-xlr"/>
+                            <constraint firstItem="NUP-5F-0jO" firstAttribute="top" secondItem="7ZE-3f-xrV" secondAttribute="bottom" constant="14" id="3EM-sL-Mb4"/>
+                            <constraint firstItem="Daf-5l-NGS" firstAttribute="leading" secondItem="i1H-Rb-Z9I" secondAttribute="trailing" constant="15" id="6wh-hh-kGZ"/>
+                            <constraint firstAttribute="trailing" secondItem="jrG-27-4n9" secondAttribute="trailing" constant="8" id="FG3-k3-lo9"/>
+                            <constraint firstItem="NUP-5F-0jO" firstAttribute="leading" secondItem="YJN-tT-MHY" secondAttribute="leading" constant="19" id="Krc-Ea-HC2"/>
+                            <constraint firstAttribute="trailing" secondItem="Daf-5l-NGS" secondAttribute="trailing" constant="8" id="PNN-c2-j7l"/>
+                            <constraint firstItem="7ZE-3f-xrV" firstAttribute="top" secondItem="YJN-tT-MHY" secondAttribute="top" constant="15" id="Rfv-JP-a53"/>
+                            <constraint firstItem="CkF-Hq-bJZ" firstAttribute="leading" secondItem="YJN-tT-MHY" secondAttribute="leading" constant="19" id="Uig-Ur-BFn"/>
+                            <constraint firstItem="jrG-27-4n9" firstAttribute="leading" secondItem="7ZE-3f-xrV" secondAttribute="trailing" constant="18" id="Unv-rW-Uwd"/>
+                            <constraint firstAttribute="bottom" secondItem="Daf-5l-NGS" secondAttribute="bottom" constant="3" id="Vmw-9C-9jj"/>
+                            <constraint firstItem="CkF-Hq-bJZ" firstAttribute="top" secondItem="7ZE-3f-xrV" secondAttribute="bottom" constant="-1" id="XSX-J6-VTK"/>
+                            <constraint firstItem="jrG-27-4n9" firstAttribute="top" secondItem="YJN-tT-MHY" secondAttribute="top" constant="15" id="YQ2-Tn-5BE"/>
+                            <constraint firstItem="7ZE-3f-xrV" firstAttribute="leading" secondItem="YJN-tT-MHY" secondAttribute="leading" constant="19" id="Z7h-8t-pKb"/>
+                            <constraint firstAttribute="trailing" secondItem="gk7-XS-ked" secondAttribute="trailing" constant="8" id="Zj6-2W-jM2"/>
+                            <constraint firstItem="i1H-Rb-Z9I" firstAttribute="leading" secondItem="YJN-tT-MHY" secondAttribute="leading" constant="19" id="aHl-2N-Vc6"/>
+                            <constraint firstAttribute="trailing" secondItem="t1i-Ie-4tV" secondAttribute="trailing" constant="8" id="cim-dJ-4k3"/>
+                            <constraint firstItem="jrG-27-4n9" firstAttribute="leading" secondItem="CkF-Hq-bJZ" secondAttribute="trailing" constant="18" id="eIi-bY-XYr"/>
+                            <constraint firstItem="Daf-5l-NGS" firstAttribute="top" secondItem="gk7-XS-ked" secondAttribute="bottom" constant="2" id="mjv-xS-u9D"/>
+                            <constraint firstItem="t1i-Ie-4tV" firstAttribute="leading" secondItem="NUP-5F-0jO" secondAttribute="trailing" constant="11" id="w3U-G2-gl2"/>
+                            <constraint firstItem="i1H-Rb-Z9I" firstAttribute="top" secondItem="NUP-5F-0jO" secondAttribute="bottom" constant="2" id="yka-6T-vGH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YJN-tT-MHY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="1ms-Sc-Peb"/>
+                    <constraint firstAttribute="bottom" secondItem="YJN-tT-MHY" secondAttribute="bottom" id="W9i-Og-XAE"/>
+                    <constraint firstItem="YJN-tT-MHY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bry-p7-IVV"/>
+                    <constraint firstAttribute="trailing" secondItem="YJN-tT-MHY" secondAttribute="trailing" constant="20" id="xIA-Gp-UzE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="detailStarView" destination="jrG-27-4n9" id="IUI-Nz-q3c"/>
+                <outlet property="eventLocationLabel" destination="CkF-Hq-bJZ" id="eaz-tg-lfh"/>
+                <outlet property="eventTimeLabel" destination="NUP-5F-0jO" id="5BC-6u-OET"/>
+                <outlet property="eventnameLabel" destination="7ZE-3f-xrV" id="DXu-JH-p5k"/>
+                <outlet property="groupChatButton" destination="gk7-XS-ked" id="1QF-9s-8Uw"/>
+                <outlet property="inviteFriendButton" destination="Daf-5l-NGS" id="rzW-S0-OSr"/>
+                <outlet property="locationButton" destination="t1i-Ie-4tV" id="r58-pJ-DZD"/>
+                <outlet property="peopleInterestedButton" destination="i1H-Rb-Z9I" id="emq-ci-Xss"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="81"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="location_icon" width="17" height="17"/>
+        <image name="star_icon" width="14" height="13"/>
+        <image name="star_iconWhite" width="14" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SAWelcomAlertVC" customModule="SliderApp" customModuleProvider="target">
+            <connections>
+                <outlet property="alertView" destination="vSx-q4-BKD" id="UkU-Xc-hvI"/>
+                <outlet property="landingLocationLabel" destination="7Fl-ri-fjQ" id="BI1-Aa-y9k"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pUJ-fh-odb">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSx-q4-BKD">
+                            <rect key="frame" x="40" y="253" width="295" height="160"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Fl-ri-fjQ">
+                                    <rect key="frame" x="8" y="103" width="287" height="53"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="53" id="Xbi-an-dts"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roket_icon" translatesAutoresizingMaskIntoConstraints="NO" id="HbE-Qz-YzG">
+                                    <rect key="frame" x="98" y="0.0" width="100" height="100"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="aKv-HC-qTl"/>
+                                        <constraint firstAttribute="height" constant="100" id="iJQ-cQ-j22"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="HbE-Qz-YzG" firstAttribute="top" secondItem="vSx-q4-BKD" secondAttribute="top" id="8bP-03-mu1"/>
+                                <constraint firstAttribute="height" constant="160" id="E8Y-2i-2lL"/>
+                                <constraint firstItem="7Fl-ri-fjQ" firstAttribute="leading" secondItem="vSx-q4-BKD" secondAttribute="leading" constant="8" id="JYx-ka-AgO"/>
+                                <constraint firstAttribute="trailing" secondItem="7Fl-ri-fjQ" secondAttribute="trailing" id="PWd-Kj-fky"/>
+                                <constraint firstItem="7Fl-ri-fjQ" firstAttribute="top" secondItem="HbE-Qz-YzG" secondAttribute="bottom" constant="3" id="kVb-zY-VPv"/>
+                                <constraint firstItem="HbE-Qz-YzG" firstAttribute="centerX" secondItem="vSx-q4-BKD" secondAttribute="centerX" constant="0.5" id="u24-1d-VeB"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="vSx-q4-BKD" secondAttribute="trailing" constant="40" id="KNe-LJ-cDb"/>
+                        <constraint firstItem="vSx-q4-BKD" firstAttribute="centerX" secondItem="pUJ-fh-odb" secondAttribute="centerX" id="dQl-5N-idC"/>
+                        <constraint firstItem="vSx-q4-BKD" firstAttribute="leading" secondItem="pUJ-fh-odb" secondAttribute="leading" constant="40" id="laB-bC-O21"/>
+                        <constraint firstItem="vSx-q4-BKD" firstAttribute="centerY" secondItem="pUJ-fh-odb" secondAttribute="centerY" id="oDk-e0-xaj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pUJ-fh-odb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EjN-MD-Blx"/>
+                <constraint firstAttribute="bottom" secondItem="pUJ-fh-odb" secondAttribute="bottom" id="GJg-wy-qbw"/>
+                <constraint firstAttribute="trailing" secondItem="pUJ-fh-odb" secondAttribute="trailing" id="cy3-gF-1Sv"/>
+                <constraint firstItem="pUJ-fh-odb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yE5-Zu-qyU"/>
+            </constraints>
+            <point key="canvasLocation" x="-27.5" y="-350.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="roket_icon" width="176" height="188"/>
+    </resources>
+</document>

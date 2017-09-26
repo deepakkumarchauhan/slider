@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="trendingCellID" rowHeight="417" id="KGk-i7-Jjw" customClass="SATrendingTableViewCell" customModule="SliderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="417"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="416"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fw1-sy-pKL">
+                        <rect key="frame" x="20" y="15" width="560" height="387"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUz-Bk-xua">
+                                <rect key="frame" x="84" y="6" width="408" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="zOm-9z-rBv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZO-Aa-KTP">
+                                <rect key="frame" x="505" y="12" width="49" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="6uR-xZ-Heu"/>
+                                    <constraint firstAttribute="width" constant="49" id="EzM-ZV-lWW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="11"/>
+                                <inset key="titleEdgeInsets" minX="-2" minY="19" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="16" minY="-15" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="6 kms" image="map_icon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BOW-Fb-Efr">
+                                <rect key="frame" x="84" y="25" width="408" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="aLl-J7-iHI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_banner_img.png" translatesAutoresizingMaskIntoConstraints="NO" id="tz8-YY-buB">
+                                <rect key="frame" x="9" y="63" width="543" height="201"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="201" id="gLM-AV-qh7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxY-vx-nzV">
+                                <rect key="frame" x="8" y="272" width="544" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="4S0-ME-vU3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_user_img1.png" translatesAutoresizingMaskIntoConstraints="NO" id="VAP-10-cWE">
+                                <rect key="frame" x="8" y="317" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="jQM-Kz-IDx"/>
+                                    <constraint firstAttribute="width" constant="60" id="teD-0l-8jN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zos-yT-EbV">
+                                <rect key="frame" x="76" y="326" width="417" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="FPh-R7-g8C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfI-eK-wAa">
+                                <rect key="frame" x="76" y="351" width="417" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="dOP-Se-Kbg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ElH-kF-0ja">
+                                <rect key="frame" x="480" y="317" width="77" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="EXj-uU-nDw"/>
+                                    <constraint firstAttribute="width" constant="77" id="xhS-yh-bRN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="11"/>
+                                <inset key="titleEdgeInsets" minX="-49" minY="37" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="15" minY="-15" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Like" image="fav_icon">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ElH-kF-0ja" firstAttribute="leading" secondItem="Zos-yT-EbV" secondAttribute="trailing" constant="-13" id="4X6-q2-S9K"/>
+                            <constraint firstAttribute="trailing" secondItem="ElH-kF-0ja" secondAttribute="trailing" constant="3" id="4bz-Ms-OWJ"/>
+                            <constraint firstItem="uZO-Aa-KTP" firstAttribute="leading" secondItem="uUz-Bk-xua" secondAttribute="trailing" constant="13" id="8QO-5k-BFv"/>
+                            <constraint firstItem="BOW-Fb-Efr" firstAttribute="top" secondItem="uUz-Bk-xua" secondAttribute="bottom" constant="1" id="9Z1-bg-RYi"/>
+                            <constraint firstItem="uZO-Aa-KTP" firstAttribute="leading" secondItem="BOW-Fb-Efr" secondAttribute="trailing" constant="13" id="BOa-BK-MKP"/>
+                            <constraint firstItem="Zos-yT-EbV" firstAttribute="leading" secondItem="VAP-10-cWE" secondAttribute="trailing" constant="8" id="Crc-Bv-WWb"/>
+                            <constraint firstItem="OfI-eK-wAa" firstAttribute="leading" secondItem="VAP-10-cWE" secondAttribute="trailing" constant="8" id="D3O-1a-z13"/>
+                            <constraint firstItem="uZO-Aa-KTP" firstAttribute="top" secondItem="fw1-sy-pKL" secondAttribute="top" constant="12" id="Dlr-uq-G3b"/>
+                            <constraint firstItem="ElH-kF-0ja" firstAttribute="leading" secondItem="OfI-eK-wAa" secondAttribute="trailing" constant="-13" id="EDW-Jy-PZY"/>
+                            <constraint firstAttribute="trailing" secondItem="uZO-Aa-KTP" secondAttribute="trailing" constant="6" id="FXo-g2-Fy8"/>
+                            <constraint firstItem="OfI-eK-wAa" firstAttribute="top" secondItem="Zos-yT-EbV" secondAttribute="bottom" constant="7" id="NvT-x0-nzZ"/>
+                            <constraint firstItem="tz8-YY-buB" firstAttribute="top" secondItem="uZO-Aa-KTP" secondAttribute="bottom" constant="8" id="Tp9-gg-KP2"/>
+                            <constraint firstItem="IxY-vx-nzV" firstAttribute="top" secondItem="tz8-YY-buB" secondAttribute="bottom" constant="8" id="Uqc-kA-bSz"/>
+                            <constraint firstItem="uUz-Bk-xua" firstAttribute="top" secondItem="fw1-sy-pKL" secondAttribute="top" constant="6" id="XBx-fd-aCo"/>
+                            <constraint firstAttribute="bottom" secondItem="VAP-10-cWE" secondAttribute="bottom" constant="10" id="d5w-7p-rKM"/>
+                            <constraint firstItem="VAP-10-cWE" firstAttribute="leading" secondItem="fw1-sy-pKL" secondAttribute="leading" constant="8" id="dPl-5Y-W3r"/>
+                            <constraint firstItem="IxY-vx-nzV" firstAttribute="leading" secondItem="fw1-sy-pKL" secondAttribute="leading" constant="8" id="eWb-4T-nn7"/>
+                            <constraint firstAttribute="trailing" secondItem="tz8-YY-buB" secondAttribute="trailing" constant="8" id="etD-S4-FBb"/>
+                            <constraint firstAttribute="trailing" secondItem="IxY-vx-nzV" secondAttribute="trailing" constant="8" id="jLJ-W9-qRX"/>
+                            <constraint firstAttribute="bottom" secondItem="ElH-kF-0ja" secondAttribute="bottom" constant="14" id="tnW-vP-CSQ"/>
+                            <constraint firstItem="tz8-YY-buB" firstAttribute="leading" secondItem="fw1-sy-pKL" secondAttribute="leading" constant="9" id="w1g-dU-jgl"/>
+                            <constraint firstItem="Zos-yT-EbV" firstAttribute="centerY" secondItem="VAP-10-cWE" secondAttribute="centerY" constant="-12" id="wIn-be-UcI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_user_img2.png" translatesAutoresizingMaskIntoConstraints="NO" id="cH2-Yv-1A1">
+                        <rect key="frame" x="29" y="4" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="S1F-E4-Q1e"/>
+                            <constraint firstAttribute="width" constant="60" id="Zoy-04-KeK"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cH2-Yv-1A1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="29" id="30A-3y-9W3"/>
+                    <constraint firstItem="fw1-sy-pKL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="7PE-p6-iEd"/>
+                    <constraint firstItem="BOW-Fb-Efr" firstAttribute="leading" secondItem="cH2-Yv-1A1" secondAttribute="trailing" constant="15" id="Bca-VX-ahn"/>
+                    <constraint firstAttribute="trailing" secondItem="fw1-sy-pKL" secondAttribute="trailing" constant="20" id="Bvu-Tk-eUq"/>
+                    <constraint firstItem="fw1-sy-pKL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Idg-Oz-5rk"/>
+                    <constraint firstAttribute="bottom" secondItem="fw1-sy-pKL" secondAttribute="bottom" constant="15" id="NS3-JT-f1x"/>
+                    <constraint firstItem="cH2-Yv-1A1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="SdP-UV-72q"/>
+                    <constraint firstItem="uUz-Bk-xua" firstAttribute="leading" secondItem="cH2-Yv-1A1" secondAttribute="trailing" constant="15" id="n3d-P8-VyD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="barCategoryLabel" destination="BOW-Fb-Efr" id="eZ4-qy-55l"/>
+                <outlet property="barNameLabel" destination="uUz-Bk-xua" id="yu4-Mf-ipQ"/>
+                <outlet property="commentUserNameLabel" destination="Zos-yT-EbV" id="YSd-96-csr"/>
+                <outlet property="commentUserProfileImageView" destination="VAP-10-cWE" id="VYk-Ba-sKA"/>
+                <outlet property="descriptionLabel" destination="IxY-vx-nzV" id="Bo5-Sd-Fxs"/>
+                <outlet property="likeButton" destination="ElH-kF-0ja" id="4Tv-Yk-XT3"/>
+                <outlet property="locationDistanceButton" destination="uZO-Aa-KTP" id="cKe-5P-DPc"/>
+                <outlet property="numberOfCommentLabel" destination="OfI-eK-wAa" id="PDg-pD-jzl"/>
+                <outlet property="productImageView" destination="tz8-YY-buB" id="bfg-je-ClJ"/>
+                <outlet property="userProfileImageView" destination="cH2-Yv-1A1" id="AUf-Bi-yxP"/>
+            </connections>
+            <point key="canvasLocation" x="-115" y="56.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dummy_banner_img.png" width="375" height="177"/>
+        <image name="dummy_user_img1.png" width="98" height="97"/>
+        <image name="dummy_user_img2.png" width="98" height="97"/>
+        <image name="fav_icon" width="65" height="65"/>
+        <image name="map_icon" width="16" height="20"/>
+    </resources>
+</document>

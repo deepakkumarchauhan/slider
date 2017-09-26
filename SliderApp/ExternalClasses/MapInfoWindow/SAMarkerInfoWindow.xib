@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SAMarkerInfoWindow" customModule="SliderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="59"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pHu-Wr-RgY">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="59"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapWindow" translatesAutoresizingMaskIntoConstraints="NO" id="bwS-oD-Oxe">
+                            <rect key="frame" x="0.0" y="0.0" width="160" height="59"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummy_chat_user_img1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Cb6-mk-qWk">
+                            <rect key="frame" x="8" y="8" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="U3v-Xc-93Z"/>
+                                <constraint firstAttribute="width" constant="40" id="apq-5j-0Fk"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X2H-FZ-AfE">
+                            <rect key="frame" x="56" y="9" width="96" height="38"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="rYn-e0-XkQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="12"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Cb6-mk-qWk" firstAttribute="centerY" secondItem="bwS-oD-Oxe" secondAttribute="centerY" constant="-1.5" id="8yJ-eQ-JA6"/>
+                        <constraint firstItem="Cb6-mk-qWk" firstAttribute="leading" secondItem="pHu-Wr-RgY" secondAttribute="leading" constant="8" id="GCG-lt-s4u"/>
+                        <constraint firstItem="bwS-oD-Oxe" firstAttribute="leading" secondItem="pHu-Wr-RgY" secondAttribute="leading" id="HWU-Mf-f2P"/>
+                        <constraint firstItem="X2H-FZ-AfE" firstAttribute="centerY" secondItem="Cb6-mk-qWk" secondAttribute="centerY" id="QV5-vd-Q0J"/>
+                        <constraint firstItem="bwS-oD-Oxe" firstAttribute="top" secondItem="pHu-Wr-RgY" secondAttribute="top" id="S5U-ia-hRy"/>
+                        <constraint firstItem="X2H-FZ-AfE" firstAttribute="leading" secondItem="Cb6-mk-qWk" secondAttribute="trailing" constant="8" id="l0a-x6-dKR"/>
+                        <constraint firstAttribute="bottom" secondItem="bwS-oD-Oxe" secondAttribute="bottom" id="lWd-6y-aog"/>
+                        <constraint firstAttribute="trailing" secondItem="X2H-FZ-AfE" secondAttribute="trailing" constant="8" id="usz-YM-b8k"/>
+                        <constraint firstAttribute="trailing" secondItem="bwS-oD-Oxe" secondAttribute="trailing" id="yd3-Yl-zZh"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pHu-Wr-RgY" secondAttribute="bottom" id="Bti-Gn-Emd"/>
+                <constraint firstItem="pHu-Wr-RgY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LPj-CR-suS"/>
+                <constraint firstAttribute="trailing" secondItem="pHu-Wr-RgY" secondAttribute="trailing" id="PXX-m6-nSR"/>
+                <constraint firstItem="pHu-Wr-RgY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pTG-uJ-hDZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nameLabel" destination="X2H-FZ-AfE" id="g1A-LS-Qrh"/>
+                <outlet property="userImageView" destination="Cb6-mk-qWk" id="ZuE-9Z-B25"/>
+            </connections>
+            <point key="canvasLocation" x="-115" y="-283.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dummy_chat_user_img1.png" width="92" height="91"/>
+        <image name="mapWindow" width="75" height="40"/>
+    </resources>
+</document>

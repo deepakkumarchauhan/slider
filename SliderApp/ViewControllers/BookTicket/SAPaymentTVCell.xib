@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Medium.ttf">
+            <string>Raleway-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SAPaymentTVCell" id="KGk-i7-Jjw" customClass="SAPaymentTVCell" customModule="SliderApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="39.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JkK-Qq-YMV">
+                        <rect key="frame" x="20" y="0.0" width="335" height="40"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OeP-YG-hWb">
+                                <rect key="frame" x="30" y="8" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="QVn-1C-8T3"/>
+                                    <constraint firstAttribute="width" constant="25" id="RrW-FS-Df6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1d8-Ke-sfV">
+                                <rect key="frame" x="60" y="10" width="216" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="uTj-AE-YH2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow_icon" translatesAutoresizingMaskIntoConstraints="NO" id="2Bd-sj-ZIg">
+                                <rect key="frame" x="280" y="11" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="d8p-Ww-D5y"/>
+                                    <constraint firstAttribute="height" constant="20" id="ggO-8N-xF3"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1d8-Ke-sfV" firstAttribute="centerY" secondItem="JkK-Qq-YMV" secondAttribute="centerY" id="Ftr-4g-SSC"/>
+                            <constraint firstItem="OeP-YG-hWb" firstAttribute="centerY" secondItem="JkK-Qq-YMV" secondAttribute="centerY" id="Gvf-Et-04Z"/>
+                            <constraint firstItem="2Bd-sj-ZIg" firstAttribute="centerY" secondItem="JkK-Qq-YMV" secondAttribute="centerY" constant="1" id="H6g-4F-xPX"/>
+                            <constraint firstItem="2Bd-sj-ZIg" firstAttribute="leading" secondItem="1d8-Ke-sfV" secondAttribute="trailing" constant="4" id="PBP-Ke-nTG"/>
+                            <constraint firstItem="OeP-YG-hWb" firstAttribute="leading" secondItem="JkK-Qq-YMV" secondAttribute="leading" constant="30" id="h9K-Hk-2Vy"/>
+                            <constraint firstAttribute="trailing" secondItem="2Bd-sj-ZIg" secondAttribute="trailing" constant="35" id="q6J-pz-sd9"/>
+                            <constraint firstItem="1d8-Ke-sfV" firstAttribute="leading" secondItem="OeP-YG-hWb" secondAttribute="trailing" constant="5" id="xuL-nW-SCH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="JkK-Qq-YMV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="13y-MX-gkF"/>
+                    <constraint firstAttribute="trailing" secondItem="JkK-Qq-YMV" secondAttribute="trailing" constant="20" id="EtX-af-qRQ"/>
+                    <constraint firstItem="JkK-Qq-YMV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Me8-I2-XGb"/>
+                    <constraint firstAttribute="bottom" secondItem="JkK-Qq-YMV" secondAttribute="bottom" constant="-0.5" id="Uk5-ce-kzk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="paymentImageView" destination="OeP-YG-hWb" id="DGW-dE-19D"/>
+                <outlet property="paymentTitleLabel" destination="1d8-Ke-sfV" id="trf-pe-LgG"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right_arrow_icon" width="20" height="20"/>
+    </resources>
+</document>
